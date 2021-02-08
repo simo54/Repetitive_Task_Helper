@@ -13,7 +13,7 @@ dirOne = "yourdirectory/"  # B
 
 errorOne = "❌ Ops, an error occurred ❌"  # C
 
-# 1. --------------------------------------------------------
+# 1.1 --------------------------------------------------------
 processOne = subprocess.Popen(lsCmd, stdout=subprocess.PIPE)
 
 while processOne.poll() is None:
@@ -33,3 +33,7 @@ if exitCodeProcessOne != 0:
 else:
     print("🙌 Exit with code 0 🙌")
 # -----------------------------------------------------------
+
+# 1.2 =============== Changing Directory =============== #
+# os.chdir(dirOne)
+# =============== Changing Directory =============== #
