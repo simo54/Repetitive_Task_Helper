@@ -13,6 +13,7 @@ paths.loader.exec_module(path)
 
 
 def test():
+    logging.info("Check")
     print("test works")
 
     # Change path if needed with os.chdir(path.namePathFrompaths.py)

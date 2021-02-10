@@ -13,5 +13,3 @@ First of all, you need this file locally, you can then copy paste the following 
 ```
 git clone https://github.com/simo54/Repetitive_Task_Helper.git
 ```
-
-                                                                                                                                |
