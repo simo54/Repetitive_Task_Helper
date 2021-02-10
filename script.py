@@ -7,13 +7,13 @@
 import os
 import subprocess
 
-lsCmd = ["ls"]  # A
+lsCmd = ["ls"]
 
-dirOne = "yourdirectory/"  # B
+dirOne = "yourdirectory/"
 
-errorOne = "❌ Ops, an error occurred ❌"  # C
+errorOne = "❌ Ops, an error occurred ❌"
 
-# 1.1 --------------------------------------------------------
+# -----------------------------------------------------------
 processOne = subprocess.Popen(lsCmd, stdout=subprocess.PIPE)
 
 while processOne.poll() is None:
@@ -34,6 +34,14 @@ else:
     print("🙌 Exit with code 0 🙌")
 # -----------------------------------------------------------
 
-# 1.2 =============== Changing Directory =============== #
+# =============== Changing Directory =============== #
 # os.chdir(dirOne)
 # =============== Changing Directory =============== #
+
+
+def main():
+    print("ok")
+
+
+if __name__ == "__main__":
+    main()
