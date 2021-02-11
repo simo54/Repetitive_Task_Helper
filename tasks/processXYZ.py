@@ -13,7 +13,7 @@ paths.loader.exec_module(path)
 
 
 def test():
-    logging.info("Check")
+    logging.info("START of test()")
     print("test works")
 
     # Change path if needed with os.chdir(path.namePathFrompaths.py)
@@ -28,7 +28,7 @@ def test():
     #     if output:
     #         print(outputDecode.decode())  # decode() is used to remove b prefix
     # exitCodeProcessOne = processOne.poll()
-
+    logging.info("END of Test()")
     print("Process Complete 🦸 \n")
 
     # if exitCodeProcessOne != 0:

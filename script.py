@@ -10,11 +10,12 @@ from tasks import *
 def main():
     logging.basicConfig(filename='test/myapp.log', level=logging.DEBUG,
                         format='%(asctime)s.%(msecs)03d %(levelname)s %(module)s - %(funcName)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S',)
-    logging.info('Started')
+    logging.info('Beginning of script')
 
     test()
+    speed()
 
-    logging.info('Finished')
+    logging.info('End of script')
 
 
 if __name__ == "__main__":
