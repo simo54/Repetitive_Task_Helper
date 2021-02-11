@@ -5,6 +5,7 @@
 # -----------------------------------------------------------
 
 from tasks import *
+import logging
 
 
 def main():
@@ -12,7 +13,7 @@ def main():
                         format='%(asctime)s.%(msecs)03d %(levelname)s %(module)s - %(funcName)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S',)
     logging.info('Beginning of script')
 
-    test()
+    vsc_projectOne()
     speed()
 
     logging.info('End of script')

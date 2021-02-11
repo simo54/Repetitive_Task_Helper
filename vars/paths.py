@@ -1,1 +1,1 @@
-vscPath = "yourPath"
+vscPath = "your path"

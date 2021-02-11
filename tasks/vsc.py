@@ -12,25 +12,26 @@ path = importlib.module_from_spec(paths)
 paths.loader.exec_module(path)
 
 
-def speed():
-    logging.info("START of Speed()")
-    print("Beginning of speed()")
+def vsc_projectOne():
+    logging.info("START of vsc_projectOne()")
+    print("Beginning of vsc_projectOne()")
 
-    speedProcess = subprocess.Popen(cmd.speedTest, stdout=subprocess.PIPE)
+    # os.chdir(path.vscPath)
 
-    while speedProcess.poll() is None:
-        output = speedProcess.stdout.readline()
+    vsc_open = subprocess.Popen(cmd.ls, stdout=subprocess.PIPE)
+
+    while vsc_open.poll() is None:
+        output = vsc_open.stdout.readline()
         outputDecode = output.strip()
-        if speedProcess.poll() is not None and output == '':
+        if vsc_open.poll() is not None and output == '':
             break
         if output:
-            print(outputDecode.decode())  # decode() is used to remove b prefix
-    resultCode = speedProcess.poll()
+            print(outputDecode.decode())
+    resultCode = vsc_open.poll()
 
     if resultCode != 0:
         logging.warning("WARNING")
-        pass
     else:
-        logging.info("END of Speed()")
+        logging.info("END of vsc_projectOne()")
 
     print("Process Complete 🦸 \n")
