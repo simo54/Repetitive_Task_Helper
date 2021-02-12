@@ -41,3 +41,6 @@ Suggested steps for new processes:
    ```
    from .filename import functionName
    ```
+
+7. On project/script.py position the function in the desired order
+8. Run script.pt
