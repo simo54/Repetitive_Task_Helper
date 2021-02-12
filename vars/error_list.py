@@ -1,1 +1,1 @@
-customError = "❌ ERROR ❌"
+vscError = "❌ ERROR ❌"

@@ -11,6 +11,10 @@ paths = importlib.spec_from_file_location("paths", "vars/paths.py")
 path = importlib.module_from_spec(paths)
 paths.loader.exec_module(path)
 
+errors = importlib.spec_from_file_location("error_list", "vars/error_list.py")
+customError = importlib.module_from_spec(errors)
+errors.loader.exec_module(customError)
+
 
 def vsc_projectOne():
     logging.info("START of vsc_projectOne()")
@@ -19,7 +23,7 @@ def vsc_projectOne():
     # Changing directory goes here
     # os.chdir(path.pathNamefrom_paths.py)
 
-    vsc_open = subprocess.Popen(cmd.ls, stdout=subprocess.PIPE)
+    vsc_open = subprocess.Popen(cmd.vsc_cmd, stdout=subprocess.PIPE)
 
     while vsc_open.poll() is None:
         output = vsc_open.stdout.readline()
@@ -31,6 +35,7 @@ def vsc_projectOne():
     resultCode = vsc_open.poll()
 
     if resultCode != 0:
+        print(customError.vscError)
         logging.warning("WARNING")
     else:
         logging.info("END of vsc_projectOne()")
