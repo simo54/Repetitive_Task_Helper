@@ -16,7 +16,8 @@ def vsc_projectOne():
     logging.info("START of vsc_projectOne()")
     print("Beginning of vsc_projectOne()")
 
-    # os.chdir(path.vscPath)
+    # Changing directory goes here
+    # os.chdir(path.pathNamefrom_paths.py)
 
     vsc_open = subprocess.Popen(cmd.ls, stdout=subprocess.PIPE)
 
