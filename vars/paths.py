@@ -1,1 +1,2 @@
-vscPath = "your path"
+# Example
+path_name = "mypath/"

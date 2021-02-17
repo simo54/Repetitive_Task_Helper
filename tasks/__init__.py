@@ -1,2 +1,2 @@
-from .vsc import vsc_projectOne
-from .speed import speed
+from .git import git_status
+from .ls import ls_view

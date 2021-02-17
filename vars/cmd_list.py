@@ -1,2 +1,2 @@
-vsc_cmd = ["git", "status"]
-speedTest = ["speedtest-cli", "--bytes"]
+ls_cmd = ["ls", "-a"]
+git_cmd = ["git","status"]
